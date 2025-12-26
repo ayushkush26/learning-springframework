@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LibraryManagementApp</title>
+</head>
+<body>
+	<form th:action="@{/register}" th:object="${book}" method="post">
+    ID: <input type="number" th:field="*{bookId}" /><br><br>
+    Name: <input type="text" th:field="*{name}" /><br><br>
+    Author: <input type="text" th:field="*{author}" /><br><br>
+    Price: <input type="number" th:field="*{price}" /><br><br>
+    <button type="submit">Register</button>
+</form>
+</body>
+</html>
